@@ -89,13 +89,13 @@ bool bad(const line &x, const line &y, const line &z) {
 void addline(i64 m,i64 b,int startptr,int &endptr) 
 {
 	lines[endptr]=line(m,b);
-			endptr++;
-			while (endptr-startptr >= 3 && bad(lines[endptr-3], lines[endptr-2], lines[endptr-1])) 
-			{
-				
-				lines[endptr-2] = lines[endptr-1];
-				endptr--;
-			}
+	endptr++;
+	while (endptr-startptr >= 3 && bad(lines[endptr-3], lines[endptr-2], lines[endptr-1])) 
+	{
+	
+		lines[endptr-2] = lines[endptr-1];
+		endptr--;
+	}
 }
 int inp[MAX];
 i64 s[MAX];
