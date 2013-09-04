@@ -51,6 +51,15 @@ void generate_matrix(int n)
 		}
 	}
 }
+void check(int n)
+{
+	int i,j;
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<n;j++)
+		assert(c[i][j]==d[i][j]);
+	}
+}
 void matrix_mult_serial(int n)
 {
 	int i,j,k;
@@ -61,7 +70,7 @@ void matrix_mult_serial(int n)
 		{
 			for(k=0;k<n;k++)
 			{
-				c[i][j]+=c[i][k]*c[k][j];
+				c[i][j]+=a[i][k]*b[k][j];
 			}
 		}
 	}
@@ -71,51 +80,38 @@ void matrix_mult_serial(int n)
 void matrix_mult_parallel1(int n)
 {
 	//Static Scheduler
+	memset(d,0,sizeof d);
 	int i,j,k;
 	double st=omp_get_wtime();
 	#pragma omp parallel for schedule(static,50) collapse(2) private(i,j,k)shared(a,b,c)
-	for(i=0;i<n;i++)for( j=0;j<n;j++)for(k=0;k<n;k++)d[i][j]+=d[i][k]*d[k][j];
+	for(i=0;i<n;i++)for( j=0;j<n;j++)for(k=0;k<n;k++)d[i][j]+=a[i][k]*b[k][j];
 	double en=omp_get_wtime();
 	printf("Parallel-1(Static Scheduler) %lf\n",en-st);
+	check(n);
 }
 void matrix_mult_parallel2(int n)
 {
 	//Dynamic Scheduler
+	memset(d,0,sizeof d);
 	int i,j,k;
 	double st=omp_get_wtime();
 	#pragma omp parallel for schedule(dynamic,50) collapse(2) private(i,j,k) shared(a,b,c)
-	for(i=0;i<n;i++)for(j=0;j<n;j++)for(k=0;k<n;k++)d[i][j]+=d[i][k]*d[k][j];
+	for(i=0;i<n;i++)for( j=0;j<n;j++)for(k=0;k<n;k++)d[i][j]+=a[i][k]*b[k][j];
 	double en=omp_get_wtime();
 	printf("Parallel-2(Dynamic Scheduler) %lf\n",en-st);
-}
-void matrix_mult_parallel3(int n)
-{
-	//Static Scheduler, shared loop counters
-	int i,j,k;
-	double st=omp_get_wtime();
-	#pragma omp parallel for schedule(static,50) collapse(2) shared(i,j,k)shared(a,b,c)
-	for(i=0;i<n;i++)for( j=0;j<n;j++)for(k=0;k<n;k++)d[i][j]+=d[i][k]*d[k][j];
-	double en=omp_get_wtime();
-	printf("Parallel-3(Static Scheduler, shared loop counters) %lf\n",en-st);
-}
-void check(int n)
-{
-	int i,j;
-	for(i=0;i<n;i++)
-	{
-		for(j=0;j<n;j++)
-		assert(c[i][j]==d[i][j]);
-	}
+	check(n);
 }
 int main() {
 	//READ("in");
 	//WRITE("out2");
 	int n=500;
 	generate_matrix(n);
-	//matrix_mult_serial(n);
+	matrix_mult_serial(n);
+	
 	matrix_mult_parallel1(n);
+	
 	matrix_mult_parallel2(n);
-	matrix_mult_parallel3(n);
-	check(n);
+
+	return 0;
 	
 }
