@@ -2,9 +2,9 @@
 
 Author: Shafaet Ashraf
 
-	Department of Computer Science and Engineering
+Department of Computer Science and Engineering
 
-	University of Dhaka,Bangladesh
+University of Dhaka,Bangladesh
 
 
 
