@@ -13,7 +13,7 @@ University of Dhaka,Bangladesh
 **Graph**
 ------------
 
-**Max Flow
+**Max Flow**
 
 - POJ 3204- Ikki's Story I - Road Reconstruction
 
