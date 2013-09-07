@@ -1,6 +1,7 @@
 /*
- * Shafaet
- * */
+ * POJ 2019
+ * Sparse Table
+ */
 #include <algorithm>
 #include <bitset>
 #include <cctype>

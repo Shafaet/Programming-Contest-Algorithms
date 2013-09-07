@@ -1,4 +1,7 @@
-
+/*
+ * Timus 1553. Caves and Tunnels 
+ * Heavy Light Decomposition
+ */ 
 #include <algorithm>
 #include <bitset>
 #include <cctype>
@@ -59,35 +62,6 @@ typedef unsigned long long ui64;
 #define READ(f) freopen(f, "r", stdin)
 #define WRITE(f) freopen(f, "w", stdout)
 const i64 INF64 = (i64)1E16;
-
-double _dist(double x1,double y1,double x2,double y2){return sqrt(sqr(x1-x2)+sqr(y1-y2));}
-i64 distsq(i64 x1,i64 y1,i64 x2,i64 y2){return sqr(x1-x2)+sqr(y1-y2);}
-i64 toInt64(string s){i64 r=0;istringstream sin(s);sin>>r;return 
-r;}
-
-double LOG(i64 N,i64 B){	return (log10l(N))/(log10l(B));	}
-string itoa(long long a){if(a==0) return "0";string ret;for(long long i=a; i>0; i=i/10) ret.push_back((i%10)+48);reverse(ret.begin(),ret.end());return ret;}
-
-vector< string > token( string a, string b ) 
-{
-	const char *q = a.c_str();while( count( b.begin(), b.end(), *q ) ) q++;vector< string > 
-	oot;while( *q ) {const char *e = q;while( *e && !count( b.begin(), b.end(), 
-	*e ) ) e++;oot.push_back( string( q, e ) );q = e;while( count( b.begin(), 
-	b.end(), *q ) ) q++;}return oot;
-}
-i64 isvowel(char s){s=tolower(s); if(s=='a' || s=='e' || s=='i' || s=='o' || s=='u')return 1; return 0;}
-i64 isupper(char s) {if(s>='A' and s<='Z') return 1; return 0;}
-template<class T> struct Fraction{T a,b;Fraction(T a=0,T b=1);string toString();};//NOTES:Fraction
-template<class T> Fraction<T>::Fraction(T a,T b){T d=gcd(a,b);a/=d;b/=d;if (b<0) a=-a,b=-b;this->a=a;this->b=b;}
-template<class T> string Fraction<T>::toString(){ostringstream sout;sout<<a<<"/"<<b;return sout.str();}
-template<class T> Fraction<T> operator+(Fraction<T> p,Fraction<T> q){return Fraction<T>(p.a*q.b+q.a*p.b,p.b*q.b);}
-template<class T> Fraction<T> operator-(Fraction<T> p,Fraction<T> q){return Fraction<T>(p.a*q.b-q.a*p.b,p.b*q.b);}
-template<class T> Fraction<T> operator*(Fraction<T> p,Fraction<T> q){return Fraction<T>(p.a*q.a,p.b*q.b);}
-template<class T> Fraction<T> operator/(Fraction<T> p,Fraction<T> q){return Fraction<T>(p.a*q.b,p.b*q.a);}
-
-//bool operator < ( const node& p ) const {      return dist > p.dist;   }
-
-
 i64 const mxn = 110000+10;
 vector<i64>g_in[mxn];
 vector<i64>g[mxn];
