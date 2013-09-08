@@ -48,3 +48,10 @@ University of Dhaka,Bangladesh
 
 - POJ 2019 USACO-Cornfield
 
+**Others**
+---------------------
+
+**Longest Increasing Subsequence in O(nlogk)**
+
+- UVA 11031 - Looking for a Subset
+
