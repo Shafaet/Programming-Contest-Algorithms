@@ -37,6 +37,12 @@ University of Dhaka,Bangladesh
 - APIO10-commandos
 - USACO-MAR08-ACQUIRE
 
+**Lexicographically smallest LCS**
+
+- Light OJ 1110 - An Easy LCS 
+
+
+
 **Data Structure**
 -----------------------
 
