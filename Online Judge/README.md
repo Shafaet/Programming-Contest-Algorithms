@@ -37,9 +37,10 @@ University of Dhaka,Bangladesh
 - APIO10-commandos
 - USACO-MAR08-ACQUIRE
 
-**Lexicographically smallest LCS**
+**LCS Variants**
 
-- Light OJ 1110 - An Easy LCS 
+- Light OJ 1110 - An Easy LCS (Printing Lexicographically Smallest LCS)
+- 1157 - LCS Revisited (Number of Unique LCS)
 
 
 
