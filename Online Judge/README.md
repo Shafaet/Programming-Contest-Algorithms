@@ -57,7 +57,7 @@ University of Dhaka,Bangladesh
 
 - POJ 2019 USACO-Cornfield
 
-**Balanced Binary Search Tree(TREAP)
+**Balanced Binary Search Tree(TREAP)**
 
 - SPOJ QMAX3VN
 
