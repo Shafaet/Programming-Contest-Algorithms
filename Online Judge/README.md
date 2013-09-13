@@ -40,7 +40,7 @@ University of Dhaka,Bangladesh
 **LCS Variants**
 
 - Light OJ 1110 - An Easy LCS (Printing Lexicographically Smallest LCS)
-- 1157 - LCS Revisited (Number of Unique LCS)
+- Light OJ 1157 - LCS Revisited (Number of Unique LCS)
 
 
 
@@ -50,10 +50,17 @@ University of Dhaka,Bangladesh
 **Heavy Light Decomposition**
 
 - Timus 1553 Caves and Tunnels
+- UVA 12424 Answering Queries On A Tree
+
 
 **RMQ using Sparse Table**
 
 - POJ 2019 USACO-Cornfield
+
+**Balanced Binary Search Tree(TREAP)
+
+- SPOJ QMAX3VN
+
 
 **Others**
 ---------------------
