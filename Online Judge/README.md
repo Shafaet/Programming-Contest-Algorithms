@@ -65,7 +65,7 @@ University of Dhaka,Bangladesh
 
 - LightOJ 1266 - Points in Rectangle 
 
-**2D Segment Tree
+**2D Segment Tree**
 
 - UVA 11297 Census  
 
