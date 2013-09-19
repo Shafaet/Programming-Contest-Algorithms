@@ -61,6 +61,14 @@ University of Dhaka,Bangladesh
 
 - SPOJ QMAX3VN
 
+**2D Binary Index Tree**
+
+- LightOJ 1266 - Points in Rectangle 
+
+**2D Segment Tree
+
+- UVA 11297 Census  
+
 
 **Others**
 ---------------------

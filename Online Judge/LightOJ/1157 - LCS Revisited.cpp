@@ -1,3 +1,6 @@
+/*
+ * Find number of unique LCS
+ */ 
 #include <algorithm>
 #include <bitset>
 #include <cctype>

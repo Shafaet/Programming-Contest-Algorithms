@@ -1,3 +1,6 @@
+/*
+ * Finding Lexicographically Minimum LCS
+ */ 
 #include <algorithm>
 #include <bitset>
 #include <cctype>
