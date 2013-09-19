@@ -61,7 +61,7 @@ University of Dhaka,Bangladesh
 
 - SPOJ QMAX3VN
 
-**2D Binary Index Tree**
+**2D Binary Indexed Tree**
 
 - LightOJ 1266 - Points in Rectangle 
 
@@ -70,10 +70,15 @@ University of Dhaka,Bangladesh
 - UVA 11297 Census  
 
 
+
 **Others**
 ---------------------
 
 **Longest Increasing Subsequence in O(nlogk)**
 
 - UVA 11031 - Looking for a Subset
+
+**2D Grid Compression**
+
+- UVALIVE 4540 Windows
 
