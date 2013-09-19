@@ -80,6 +80,5 @@ University of Dhaka,Bangladesh
 
 **2D Grid Compression**
 
-- UVALIVE 4540 Windows
 - UVA 12069 - Robots inside the Labyrinth
 
