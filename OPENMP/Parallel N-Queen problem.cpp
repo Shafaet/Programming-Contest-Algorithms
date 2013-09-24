@@ -1,6 +1,7 @@
 /*
  * Parallel N-queens using openmp
- * Author: Shafaet
+ * Compile with -fopenmp flag
+ * Author: Shafaet,University of Dhaka
  */
 #include <algorithm>
 #include <bitset>
@@ -50,7 +51,7 @@ int fy[]={-1,+1,+0,+0,+1,+1,-1,-1};
 
 
 
-int n,ans=0;
+int n;
 
 int call2(int col,int rowmask,int dia1,int dia2)
 {
@@ -93,7 +94,7 @@ int call(int col,int rowmask,int dia1,int dia2)
 double parallel()
 {
 	double st=omp_get_wtime();
-	ans=0;
+	int ans=0;
 	int i;
 	int rowmask=0,dia1=0,dia2=0;
 	 #pragma omp parallel for reduction(+:ans) shared(i,rowmask)
@@ -114,7 +115,7 @@ double serial()
 {
 	
 	double st=omp_get_wtime();
-	ans=0;
+	int ans=0;
 	int i;
 	int rowmask=0,dia1=0,dia2=0;
 	for(i=0;i<n;i++)
