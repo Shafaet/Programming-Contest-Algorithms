@@ -21,9 +21,13 @@ University of Dhaka,Bangladesh
 
 - UVA 12092 - Paint the Roads
 
-**Bridge/Articulation Point
+**Bridge/Articulation Point**
 
 - UVA 1310 - One way traffic
+
+**Prufer Codes**
+
+- Timus 1069 Prufer Code
 
 
 **Dynamic Programming**
@@ -76,7 +80,7 @@ University of Dhaka,Bangladesh
 **Geometry**
 ---------------------
 
-**Max Co-linear Points
+**Max Co-linear Points**
 
 - Timus 1052 Rabbit Hunt
 
