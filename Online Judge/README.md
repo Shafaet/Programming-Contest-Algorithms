@@ -80,5 +80,6 @@ University of Dhaka,Bangladesh
 
 **2D Grid Compression**
 
+- UVA 11918 - Traveler of Gridland
 - UVA 12069 - Robots inside the Labyrinth
 
