@@ -21,6 +21,9 @@ University of Dhaka,Bangladesh
 
 - UVA 12092 - Paint the Roads
 
+**Bridge/Articulation Point
+
+- UVA 1310 - One way traffic
 
 
 **Dynamic Programming**
@@ -69,6 +72,13 @@ University of Dhaka,Bangladesh
 
 - UVA 11297 Census  
 
+
+**Geometry**
+---------------------
+
+**Max Co-linear Points
+
+- Timus 1052 Rabbit Hunt
 
 
 **Others**
