@@ -88,6 +88,9 @@ University of Dhaka,Bangladesh
 **Others**
 ---------------------
 
+**Permutation with k non-fixed points**
+- LightOJ 1095 - Arrange The Numbers
+
 **Longest Increasing Subsequence in O(nlogk)**
 
 - UVA 11031 - Looking for a Subset
