@@ -21,13 +21,13 @@ University of Dhaka,Bangladesh
 
 - UVA 12092 - Paint the Roads
 
-**Bridge/Articulation Point**
-
-- UVA 1310 - One way traffic
-
 **Prufer Codes**
 
 - Timus 1069 Prufer Code
+
+**Strongly Connected components**
+
+- Topcoder - BikeRiding(SRM 545 div2 level 3)
 
 
 **Dynamic Programming**
