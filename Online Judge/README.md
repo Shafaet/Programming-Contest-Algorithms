@@ -7,8 +7,8 @@ Department of Computer Science and Engineering
 University of Dhaka,Bangladesh
 
 
-**Some Categories**
-
+***BASIC SUBROUTINES***
+------------
 
 **Graph**
 ------------
@@ -85,6 +85,7 @@ University of Dhaka,Bangladesh
 ---------------------
 
 - SPOJ SNAKYNUM
+- LightOJ 1268 - Unlucky String
 
 
 **Geometry**
@@ -99,6 +100,12 @@ University of Dhaka,Bangladesh
 - LightOJ 1240 - Point Segment Distance (3D)
 
 
+**String Algorithms**
+---------------------
+
+**KMP**
+
+- LightOJ 1268 - Unlucky String
 
 
 **Others**
