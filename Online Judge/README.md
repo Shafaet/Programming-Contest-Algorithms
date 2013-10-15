@@ -81,6 +81,11 @@ University of Dhaka,Bangladesh
 - UVA 11297 Census  
 
 
+**Matrix Exponentiation**
+
+- SPOJ SNAKYNUM
+
+
 **Geometry**
 ---------------------
 
