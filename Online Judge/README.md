@@ -94,6 +94,11 @@ University of Dhaka,Bangladesh
 
 - Timus 1052 Rabbit Hunt
 
+** Point Segment Distance (3D) **
+
+- LightOJ 1240 - Point Segment Distance (3D)
+ 
+
 
 **Others**
 ---------------------
@@ -104,6 +109,11 @@ University of Dhaka,Bangladesh
 **Longest Increasing Subsequence in O(nlogk)**
 
 - UVA 11031 - Looking for a Subset
+
+**Ternary Search**
+
+- LightOJ 1240 - Point Segment Distance (3D)
+
 
 **2D Grid Compression**
 
