@@ -1,0 +1,87 @@
+<?php get_header(); ?>
+<div id="content_box">
+	<div id="left_box">
+		<div id="content">
+		<?php if (have_posts()) : the_post(); ?>
+			<div id="nav-above" class="navigation">
+				<div class="nav-previous"><?php previous_post_link('<span class="meta-nav">&laquo;</span>&nbsp;%link'); ?></div>
+				<div class="nav-next"><?php next_post_link('%link&nbsp;<span class="meta-nav">&raquo;</span>'); ?></div>				
+			</div>
+			<div id="content_inner">
+				<div id="post-<?php the_ID(); ?>" class="<?php neobox_post_class(); ?>">
+					<h2 class="entry-title top"><a href="<?php the_permalink(); ?>" rel="nofollow bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
+					<div class="entry-meta">
+						<div class="entry-meta-left">
+							<span class="author vcard"><font face="SolaimanLipi" size="3">&#2482;&#2495;&#2454;&#2503;&#2459;&#2503;&#2472;: </font> <font face="SolaimanLipi" size="2"><a class="url fn n" href="<?php echo get_author_link(false, $authordata->ID, $authordata->user_nicename); ?>" title="View all entries by <?php the_author(); ?>"><?php the_author(); ?></a></font></span>
+							<span class="meta-sep">|</span>
+							<span class="cat-links"><font face="SolaimanLipi" size="3">&#2476;&#2495;&#2477;&#2494;&#2455;:</font> <font face="SolaimanLipi" size="2"><?php the_category(', '); ?></font></span>
+							<span class="entry-date"><font face="SolaimanLipi" size="3">&#2468;&#2494;&#2480;&#2495;&#2454;:</font> <font face="SolaimanLipi" size="2"><?php if (function_exists('the_bongabdodate')) the_bongabdodate();?></font> (<small><?php the_time('F jS, Y') ?></small>)</span>
+<div align="center"><a href="#respond">(মন্তব্য করুন অথবা পৃষ্ঠার নিচে যান)</a><br><a href="#nav-below">(সরাসরি মন্তব্য অংশে যান)</a><br>
+
+ </div>
+						</div>
+						<!-- displays the user's photo in  thumbnail -->
+							<p align="right"><?php userphoto_the_author_thumbnail() ?> <br>
+							<font face="SolaimanLipi"><?php the_author_posts_link(); ?></font></p>						
+					</div>
+					<div class="entry-content">
+						<p style="line-height: 200%"><font face="SolaimanLipi" size ="3">						
+						<?php the_content('Read More <span class="meta-nav">&raquo;</span>'); ?></font></p>
+						<?php wp_link_pages("before=<div class=\"page-link\"><span class=\"meta-page\">Pages:</span>&after=</div>\n"); ?>
+					<!-- <?php echo number2bengunicode(the_views()); ?> -->
+					<!-- <?php echo convertToBanglaNumber(30); ?> -->
+
+					</div>
+					<div class="entry-meta">
+						<div class="entry-meta-left">
+							<span class="entry-date"><abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO'); ?>"><?php unset($previousday); the_date('', '', ''); ?> <span class="date-sep">&#8211;</span> <?php the_time(); ?></abbr></span>
+							<?php the_tags("<div class=\"entry-meta-right\"><span class=\"meta-sep\">|</span>\n\t\t\t\t\t\t\t<span class=\"tag-links\">Tagged ", ', ', "</span></div>\n"); ?>
+							<p>&nbsp;</p>
+							<p>&nbsp;</p>
+							<p align="center"><font color="#008000">&#2482;&#2503;&#2454;&#2494;&#2463;&#2495; <?php if(function_exists('the_views')) { the_views(); } ?> &#2476;&#2494;&#2480; &#2474;&#2464;&#2495;&#2468;&nbsp; &#2489;&#2527;&#2503;&#2459;&#2503;</font></p>				
+
+
+							<?php if (function_exists('sharethis_button') && (get_option('st_add_to_content') == 'no')) { ?><span class="entry-sharing"><?php sharethis_button(); ?></span><?php } ?>
+						</div>
+
+						<?php edit_post_link('সম্পাদনা', "<div class=\"entry-meta-right\"><span class=\"meta-sep\">|</span>\n\t\t\t\t\t\t\t<span class=\"edit-link\">", "</span></div>\n"); ?>
+
+			<?php global $current_user; ?>			
+			<?php get_currentuserinfo(); ?>
+<?php if( function_exists('LIKEBOT_BUTTON') &&  $current_user->ID ) { LIKEBOT_BUTTON(); } ?>
+<?php if( function_exists('LIKEBOT_BUTTON') &&  !$current_user->ID ) { echo "<b> লেখায় রেটিং দিতে বা রেটিং দেখতে লগইন করুন</b>"; } ?>
+
+<br>
+<?php if (function_exists('wpfp_link') &&  $current_user->ID) { wpfp_link(); } ?>
+
+					</div>
+				</div>
+			</div>
+			<div id="nav-below" class="navigation">
+				<div class="nav-previous"><?php previous_post_link('<span class="meta-nav">&laquo;</span>&nbsp;%link'); ?></div>
+
+				<div class="nav-next"><?php next_post_link('%link&nbsp;<span class="meta-nav">&raquo;</span>'); ?></div>
+			</div>
+			<?php comments_template(); ?>
+		<?php else : ?>
+			<div id="content_inner">
+				<div id="post-0" class="post error404">
+					<h3 class="entry-title top">Nothing Found</h3>
+					<div class="entry-content">
+						<p>Sorry, but nothing matched your request.</p>
+						<form class="search" id="error404-searchform" method="get" action="<?php bloginfo('home') ?>">
+							<div>
+								<input id="error404-s" class="text-input" name="s" type="text" value="<?php the_search_query(); ?>" size="40" />
+								<input id="error404-searchsubmit" class="submit-button" name="searchsubmit" type="submit" value="Search" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		<?php endif; ?>
+		</div>
+		<?php include(TEMPLATEPATH . '/sidebar-left.php')?>
+	</div>
+	<?php get_sidebar(); ?>
+</div>
+<?php get_footer(); ?>
