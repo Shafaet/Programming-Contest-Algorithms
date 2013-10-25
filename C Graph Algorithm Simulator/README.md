@@ -62,14 +62,17 @@ Graph Algorithm Simulator
 Install needed packages:
 
 Ubuntu:
-sudo apt-get install g++ cmake
+sudo apt-get install g++ geany
 sudo apt-get install freeglut3 freeglut3-dev
 
 Fedora:
-yum install g++ freeglut-devel
+yum install g++ freeglut-devel geany
 
 Now compile main.cpp using following parameters:
 -lglut -lGL -lGLU
+
+**Windows**
+Sorry, not supported yet.
 
 Done!
 
