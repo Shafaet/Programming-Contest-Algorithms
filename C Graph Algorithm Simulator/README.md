@@ -19,40 +19,40 @@ Graph Algorithm Simulator
 **Supported Algorithms**
 -------------------------------
 
-Kruskal’s minimum spanning tree:
+	Kruskal’s minimum spanning tree:
 
-Simulate kruskal’s algorithm for finding mst and see how it works
+	Simulate kruskal’s algorithm for finding mst and see how it works
 
-Depth First Search:
+	Depth First Search:
 
-“Cgraph Simulator” will simulate the dfs with colored line and will show you what actually happens when the algorithm runs.
+	“Cgraph Simulator” will simulate the dfs with colored line and will show you what actually happens when the algorithm runs.
 
-Breadth First Search:
+	Breadth First Search:
 
-Run bfs and find single source shortest path(SSSP). Our simulator will show you exactly how it works
+	Run bfs and find single source shortest path(SSSP). Our simulator will show you exactly how it works
 
-Dijkstra:
+	Dijkstra:
 
-If the graph is weighted BFS won’t work. Simulate dijikstra to find SSSP.
+	If the graph is weighted BFS won’t work. Simulate dijikstra to find SSSP.
 
-Floyed warshall:
+	Floyed warshall:
 
-Our simulator will use floyed warshall to find apsp. As it is a complicated algorithm It wont visualize the simulation.
+	Our simulator will use floyed warshall to find apsp. As it is a complicated algorithm It wont visualize the simulation.
 
-Bellman ford:
+	Bellman ford:
 
-Find Negative weight cycle using this. This algorithm has resemblance to dijkstra.
+	Find Negative weight cycle using this. This algorithm has resemblance to dijkstra.
 
-Optimal Graph Coloring
+	Optimal Graph Coloring
 
-Color the nodes in optimal way using backtrack and see how it works
-Finding Euler Circuit and path using backtrack
+	Color the nodes in optimal way using backtrack and see how it works
+	Finding Euler Circuit and path using backtrack
 
-Use backtrack to find euler circuit and path
+	Use backtrack to find euler circuit and path
 
-Limitation:
+	Limitation:
 
-The Simulator doesnt Support Directed graph yet.
+	The Simulator doesnt Support Directed graph yet.
 
 
 **How to Run**
