@@ -17,8 +17,8 @@
 
 
 
-Graph Algorithm Simulator
-
+**Graph Algorithm Simulator**
+-------------------------------
 
 **Features**
 -------------------------------
