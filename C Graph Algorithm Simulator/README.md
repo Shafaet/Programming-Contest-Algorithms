@@ -99,8 +99,12 @@ Done!
 **Author**
 -----------------------
 Shafaet Ashraf
+
 Student,
-Computer Science and Engineering, University of Dhaka, Bangladesh
+
+Computer Science and Engineering, University of Dhaka, 
+
+Bangladesh
 
 This software was written as 1st year academic project in 2010.
 
