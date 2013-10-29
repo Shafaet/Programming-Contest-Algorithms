@@ -108,11 +108,22 @@ University of Dhaka,Bangladesh
 - LightOJ 1268 - Unlucky String
 
 
+**Gaussian Elimination**
+---------------------
+
+**Bitwise Gaussian Elimination over gf2**
+
+- UVALIVE 5070 Awkward Lights
+
+
 **Others**
 ---------------------
 
 **Permutation with k non-fixed points**
 - LightOJ 1095 - Arrange The Numbers
+
+**Prime factorization inside sieve of eratosthenes**
+- UVALIVE 4735- Not So Flat After All
 
 **Longest Increasing Subsequence in O(nlogk)**
 
