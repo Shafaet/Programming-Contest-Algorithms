@@ -74,11 +74,15 @@ University of Dhaka,Bangladesh
 
 **2D Binary Indexed Tree**
 
-- LightOJ 1266 - Points in Rectangle 
+- LightOJ 1266 - Points in Rectangle
 
 **2D Segment Tree**
 
 - UVA 11297 Census  
+
+**Lowest Common Ancestor Using Sparse Table***
+
+- LightOJ 1162 - Min Max Roads
 
 
 **Matrix Exponentiation**
@@ -138,4 +142,3 @@ University of Dhaka,Bangladesh
 
 - UVA 11918 - Traveler of Gridland
 - UVA 12069 - Robots inside the Labyrinth
-
