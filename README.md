@@ -32,6 +32,10 @@ Shafaet.csedu@gmail.com
 
 - Topcoder - BikeRiding(SRM 545 div2 level 3)
 
+**Bridge**
+
+- UVA 1310 (One way traffic)
+
 
 **Dynamic Programming**
 ------------------------
