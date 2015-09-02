@@ -12,6 +12,10 @@ Shafaet.csedu@gmail.com
 **Graph**
 ------------
 
+**DFS cycle finding**
+
+- SPOJ Paradox
+
 **Max Flow**
 
 - POJ 3204- Ikki's Story I - Road Reconstruction
