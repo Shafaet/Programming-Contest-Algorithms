@@ -1,33 +1,12 @@
 //Programming Contest Template
 //Shafaet Ashraf 
-#include <algorithm>
-#include <bitset>
-#include <cctype>
-#include <cmath>
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#include <ctime>
-#include <deque>
-#include <fstream>
-#include <iostream>
-#include <list>
-#include <map>
-#include <queue>
-#include <set>
-#include <sstream>
-#include <stack>
-#include <string>
-#include <utility>
-#include <vector>
-#include <assert.h>
+#include <bits/stdc++.h>
 
 #define stream istringstream
 #define rep(i,n) for(int i=0; i<(int)n; i++)
 #define repv(i,n) for(int i=n-1; i>=0; i--)
 #define repl(i,n) for(int i=1; i<=(int)n; i++)
 #define replv(i,n) for(int i=n; i>=1; i--)
-#define FOR(i,a,b) for(int i=(int)a;i<=(int)b;i++)
 #define foreach(i,n) for(__typeof((n).begin())i =(n).begin();i!=(n).end();i++)
 #define sz(x) (int)x.size()
 #define inf (1061109567)
@@ -37,19 +16,11 @@
 #define mem(x,y) memset(x,y,sizeof(x));
 #define eps 1e-9
 #define rev reverse
-#define pii pair<i64,i64>
-#define pll pair<i64,i64>
+#define pii pair<int,int>
 #define pmp make_pair
-#define sdi(x) scanf("%d",&x)
-#define sdii(x,y) scanf("%d%d",&x,&y)
-#define sds(x) scanf("%s",x)
-#define pfi(x) printf("%d\n",x);
 #define uu first
 #define vv second
 using namespace std;
-template<class T> inline T sqr(T x){return x*x;}
-template<class T> inline T lcm(T a,T b) {if(a<0)return
-lcm(-a,b);if(b<0)return lcm(a,-b);return a*(b/__gcd(a,b));}
 template<class T> T power(T N,T P){ return (P==0)?  1: N*power(N,P-1); }
 template<class T> string itoa(T a){if(!a) return "0";string ret;for(T i=a; i>0; i=i/10) ret.pb((i%10)+48);reverse(all(ret));return ret;}
 typedef  long long i64;
