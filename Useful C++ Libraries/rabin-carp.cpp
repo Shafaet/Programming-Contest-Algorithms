@@ -1,3 +1,4 @@
+//Implementation of Rabin Carp String Matching Algorithm
 #include <bits/stdc++.h>
 using namespace std;
 
