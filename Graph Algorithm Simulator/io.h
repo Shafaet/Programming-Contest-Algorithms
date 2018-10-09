@@ -101,7 +101,7 @@ void filebrowser()
 
 
 	char filename[50];
-	while(fgets(filename,100,fp)!='\0')
+	while(fgets(filename,100,fp))
 	{
 		
 		int size=strlen(filename);
